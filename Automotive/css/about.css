@@ -1,0 +1,231 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('../img/SideWayM4.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    background-color: #333;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.landing-container {
+    padding: 50px;
+    text-align: center;
+    margin-top: -5px;
+    animation-name: slideRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    padding-top: 70px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.container h2 {
+    font-size: 3em;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-container h2 {
+    font-size: 3em;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-top: -5px;
+    animation-name: slideRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.landing-container p {
+    color: white;
+    font-style: italic;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.1%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+#container {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    width: 100%;
+}
+
+#form h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#form input[type="text"],
+#form input[type="password"],
+#form input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 auto; /* Center horizontally */
+}
+
+#form input[type="submit"] {
+    width: 90%;
+    padding: 12px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+#form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#form p {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#form a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#form a:hover {
+    color: #0056b3;
+}
+
+/* Form container styles */
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container h1 {
+    color: rgb(64, 124, 209);
+    margin-bottom: 20px;
+}
+
+.form-container span {
+    display: block;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container button {
+    background-color: rgb(64, 124, 209);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: rgb(34, 94, 169);
+}
+

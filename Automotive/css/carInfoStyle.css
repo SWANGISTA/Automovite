@@ -1,0 +1,113 @@
+/* Global styles */
+body {
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(backviewM4.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    min-height: 100vh;
+    /* Apply blur effect */
+}
+
+/* Top bar styles */
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    color: white; /* Text color */
+    font-size: x-large;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Form styles */
+#form {
+    background-color: rgba(255, 255, 255, 0.48);
+    max-width: 370px;
+    padding: 3% 5%;
+    box-shadow: 10px 10px 5px rgb(82, 11, 11);
+    border-radius: 5px;
+    color: rgb(48, 51, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 40%;
+    font-style: normal;
+    font-size: medium;
+}
+
+#form h1 {
+    margin-top: 0;
+    text-align: center;
+    font-style: oblique;
+    color: black,'\f27e';
+}
+
+#form h3Strings {
+    color: white;
+    text-align: left;
+    font-size: medium;
+    font-style: oblique;
+}
+
+#form select[type="text"],
+#form select[type="password"],
+#form select[type="submit"] {
+    width: calc(100% - 20px); /* Adjust width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px; /* Adjust margin */
+}
+
+#form select[type="submit"] {
+    color: white;
+    background-color: rgb(64, 124, 209);
+    padding: 16px 24px; /* Increase padding */
+    font-size: 18px; /* Increase font size */
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    width: 120px; /* Set a specific width */
+}
+
+#form select[type="submit"]:hover {
+    background-color: rgb(34, 94, 169);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#form submit 
+{
+    color: blue;
+    
+}
+
+#form p {
+    text-align: center;
+}
+
+
+
+#form select {
+    width: calc(100% - 25px); /* Adjust width */
+    padding: 12px; /* Increase padding */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px; /* Adjust margin */
+    font-size: 16px; /* Increase font size */
+}
+
+/* Set a specific width for the options */
+#form select option {
+    width: 200px; /* Adjust width of the options */
+}
+
+/* Add hover effect to the options */
+#form select:hover {
+    border-color: #666; /* Change border color on hover */
+}

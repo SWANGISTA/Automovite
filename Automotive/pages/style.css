@@ -1,0 +1,103 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.5) 50%
+        ),
+        url("../img/backviewM4.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.top-bar {
+    background-color: #333;
+    color: rgb(64, 124, 209);
+    font-size: x-large;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-bar ul li {
+    margin-right: 20px;
+}
+
+.top-bar ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.top-bar ul li a:hover {
+    color: rgb(82, 11, 11);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.48);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container h1 {
+    color: rgb(64, 124, 209);
+    margin-bottom: 20px;
+}
+
+.form-container span {
+    display: block;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container button {
+    background-color: rgb(64, 124, 209);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: rgb(34, 94, 169);
+}

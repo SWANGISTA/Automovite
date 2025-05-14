@@ -1,0 +1,111 @@
+.top-bar {
+    background-color: #333; 
+    color:  rgb(64, 124, 209); 
+    font-size: medium;
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+}
+
+
+.login-form {
+    display: flex; 
+    align-items: center; 
+}
+
+
+.login-input {
+    margin-right: 10px; /* Margin between inputs */
+    padding: 5px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border */
+}
+
+/* Style for login button */
+.login-button {
+    padding: 8px 16px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgb(64, 124, 209); /* Green background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Set background image for the body */
+body {
+    background-image: url('../img/backviewM4.jpg');
+    background-size: cover;
+    background-position: 0%;
+    
+    margin: 0;
+    padding: 0;
+    
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 70vh;
+}
+#form{
+    background-color: rgba(255, 255, 255, 0.48);
+    max-width: 500px;
+    padding: 3% 5%;
+    box-shadow: 10px 10px 5px rgb(82, 11, 11);
+    border-radius: 4px;
+    color: rgb(64, 124, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 40%;
+    font-style: normal;
+    font-size: medium;
+
+}
+#form h1 {
+    margin-top: 0;
+    text-align: center;
+    color: rgb(64, 124, 209);
+}
+
+#form h5 {
+    color: rgb(230, 221, 221);
+    text-align: center;
+}
+
+#form input[type="text"],
+#form input[type="password"],
+#form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#form input[type="submit"] {
+    color: white;
+    background-color: rgb(64, 124, 209);
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    width: 120px; /* Set a specific width */
+}
+
+#form input[type="submit"]:hover {
+    background-color: rgb(34, 94, 169);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#form p {
+    text-align: center;
+}
+#form h6{
+    color: whitesmoke;
+}

@@ -1,0 +1,95 @@
+body {
+    background-image: url('../img/backviewM4.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    min-height: 100vh;
+    /* Apply blur effect */
+}
+
+#form {
+    background-color: rgba(255, 255, 255, 0.48);
+    max-width: 500px;
+    padding: 3% 5%;
+    box-shadow: 10px 10px 5px rgb(82, 11, 11);
+    border-radius: 4px;
+    color: rgb(64, 124, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 40%;
+    font-style: normal;
+    font-size: medium;
+}
+
+#form h1 {
+    margin-top: 0;
+    text-align: center;
+    font-style: oblique;
+    color: rgb(64, 124, 209);
+}
+
+#form h3Strings {
+    color:  white;
+    text-align: left;
+    font-size: medium;
+    font-style: oblique;
+}
+
+#form input[type="text"],
+#form input[type="password"],
+#form input[type="submit"] {
+    width: calc(100% - 20px); /* Adjust width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px; /* Adjust margin */
+}
+
+#form input[type="submit"] {
+    color: white;
+    background-color: rgb(64, 124, 209);
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    width: 120px; /* Set a specific width */
+}
+
+#form input[type="submit"]:hover {
+    background-color: rgb(34, 94, 169);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#form p {
+    text-align: center;
+}
+#form input[type="text"],
+#form input[type="password"] {
+    width: calc(100% - 20px); /* Adjust width */
+    padding: 8px; /* Adjust padding */
+    margin-bottom: 10px; /* Reduce margin bottom */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#container h1 {
+  color:rgb(34, 94, 169) ;
+
+}
+#container h3 {
+    color:rgb(34, 94, 169) ;
+}
+

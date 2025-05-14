@@ -1,0 +1,98 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --overlay-color: rgba(0, 0, 0, 0.5);
+    --button-hover-color: rgb(82, 11, 11);
+}
+
+.top-bar {
+    background: linear-gradient(to top, var(--overlay-color) 50%, var(--overlay-color) 50%), url(backviewM4.jpg); /* Transparent background */
+    color: white; /* Text color */
+    font-size: x-large;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Fill the height of .middleMan */
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; /* Align links horizontally */
+    align-items: center; /* Center the list items vertically */
+}
+
+.menu ul li {
+    margin-right: 20px; /* Adjust the spacing between links */
+}
+
+.menu ul li:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+}
+
+.menu ul li a {
+    color: white; /* Text color */
+    text-decoration: none;
+    position: relative; /* Relative position to make hover effect */
+}
+
+.menu ul li a:hover img {
+    filter: brightness(70%); /* Adjust brightness on hover */
+}
+
+.menu ul li a:hover::after {
+    content: ''; /* Create pseudo-element for hover effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--button-hover-color); /* Hover color */
+    opacity: 0.5;
+    border-radius: 50%; /* Make circle on hover */
+    z-index: -1; /* Move behind the image */
+}
+
+.menu ul li a img {
+    width: 100px; /* Increase the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the images circular */
+    transition: filter 0.3s ease; /* Smooth transition for brightness */
+}
+
+.middleMan {
+    background-color: rgb(215, 215, 215);
+    background-size: cover;
+    background-position: 0%;
+    box-shadow: 0 0 10px rgba(201, 13, 13, 0.5); /* Add shadow effect */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 22vh; /* Set a fixed height */
+}
+
+.slogan, .story {
+    color: whitesmoke;
+    font-size: small;
+    align-items: center;
+    font-style: oblique;
+    align-self: baseline;
+}
+
+.story {
+    color: var(--button-hover-color);
+    font-size: larger;
+}
